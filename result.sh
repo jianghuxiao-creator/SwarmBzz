@@ -8,6 +8,7 @@ pssPublicKey=`curl localhost:1635/addresses | jq | grep pssPublicKey`
 balance=`curl localhost:1635/chequebook/balance | jq`
 cheque=`curl localhost:1635/chequebook/cheque | jq`
 
+rm -r logs
 mkdir logs
 a=`curl ifconfig.me`
 echo $ip >>/home/bee/logs/${a}-bee_console.log>&1
