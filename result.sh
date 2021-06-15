@@ -1,4 +1,5 @@
 #!/bin/bash
+apt install -y jq
 ip=`curl ifconfig.me`
 connectCount=`curl -s http://localhost:1635/peers | jq '.peers | length' `
 address=`curl localhost:1635/addresses | jq | grep ethereum`
