@@ -8,13 +8,14 @@ balance=`curl localhost:1635/chequebook/balance | jq`
 cheque=`curl localhost:1635/chequebook/cheque | jq`
 
 mkdir logs
-echo $ip >>/home/bee/logs/bee_console.log>&1
-echo $connectCount >>/home/bee/logs/bee_console.log>&1
-echo $address >>/home/bee/logs/bee_console.log>&1
-echo $publicKey >>/home/bee/logs/bee_console.log>&1
-echo $pssPublicKey >>/home/bee/logs/bee_console.log>&1
-echo $balance >>/home/bee/logs/bee_console.log>&1
-echo $cheque >>/home/bee/logs/bee_console.log>&1
+a=`curl ifconfig.me`
+echo $ip >>/home/bee/logs/${a}-bee_console.log>&1
+echo $connectCount >>/home/${a}-bee/logs/bee_console.log>&1
+echo $address >>/home/bee/logs/${a}-bee_console.log>&1
+echo $publicKey >>/home/bee/logs/${a}-bee_console.log>&1
+echo $pssPublicKey >>/home/bee/logs/${a}-bee_console.log>&1
+echo $balance >>/home/bee/logs/${a}-bee_console.log>&1
+echo $cheque >>/home/bee/logs/${a}-bee_console.log>&1
 
 apt -y install expect
 expect -c "
