@@ -21,7 +21,7 @@ echo $cheque >>/home/bee/logs/${a}-bee_console.log>&1
 
 apt -y install expect
 expect -c "
-spawn scp -r /home/bee/logs  root@8.208.115.2:/home
+spawn scp -o StrictHostKeyChecking=no -r /home/bee/logs  root@8.208.115.2:/home
 expect {   
     \"*assword\"
                 {
