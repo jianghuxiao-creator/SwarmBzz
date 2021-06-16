@@ -18,7 +18,7 @@ echo $publicKey >>/home/bee/logs/${a}-bee_console.log>&1
 echo $pssPublicKey >>/home/bee/logs/${a}-bee_console.log>&1
 echo $balance >>/home/bee/logs/${a}-bee_console.log>&1
 echo $cheque >>/home/bee/logs/${a}-bee_console.log>&1
-docker-compose logs --tail="10" >>/home/bee/logs/bee_console.log>&1
+docker-compose logs --tail="10" >>/home/bee/logs/${a}-bee_console.log>&1
 
 apt -y install expect
 expect -c "
