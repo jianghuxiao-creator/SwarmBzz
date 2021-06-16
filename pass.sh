@@ -1,6 +1,6 @@
-#!/usr/bin/env expect
+#!/bin/bash
 
-expect -glob "
+expect -c "
 spawn scp -r /home/bee/logs  root@8.208.115.2:/home
 expect {   
     \"*assword\"
