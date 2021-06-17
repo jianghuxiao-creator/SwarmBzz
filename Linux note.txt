@@ -1,0 +1,61 @@
+Linux note
+
+1、 cd /   进入根目录
+2、 /etc/bee
+3、 :wq     保存修改并退出
+4、 :q!     强制退出，放弃修改
+5、 帮助命令 man -h
+6、 ls /dev | grep sgx         grep 模糊匹配
+7、 mkdir 新建文件夹
+8、 touch  新建文件
+9、 管道符 | 把前一个命令的输出作为后一个命令的输入
+10、echo $SHELL  查看使用的解释器
+11、ssh -o StrictHostKeyChecking=no root@123.59.xx.xx  一台服务器访问另一台服务器
+    exit 推出连接
+12、往文件里写内容
+13、替换 # sed 's/unix/linux/' sed-test.txt
+
+14 保存log到文件 docker-compose logs  --tail="50" bee-1 >>bee_1consle.log>&1
+		 
+
+echo命令：
+
+第一种：
+
+echo 'i love u' >a.txt  *在a.txt这个文件中输入i love u，如果没有这个文件则创建。如果有这个文件，那么
+新内容代替原来的内容。
+第二种：
+
+echo 'i love u' >>a.txt  *在a.txt这个文件中输入i love u，如果没有这个文件则创建.如果有这个文件，那么
+新内容添加在原来内容的后面
+
+13、
+情况0：机器A<—拷贝—>机器B
+在window上使用MobaXterm，实现两台ubuntu服务器上文件夹的自由拷贝。即在MobaXterm的某个机器的命令行中使用以下两种情况实现自由拷贝。
+
+sudo scp -r /xxx文件 userName@IP地址:/xxx文件
+1
+ps:-r： 递归复制整个目录
+
+情况1：当前机器—拷贝到—>远程机器
+拷贝当前机器 /usr/local/tools/ 下某个具体的文件 到 远程240机器 /usr/local/tools 下
+
+scp -r 当前路径 远程userName@IP地址:/xxx文件
+1
+命令输入完毕，会要求输入“192.168.0.240”服务器 userName的密码，然后开始远程拷贝数据。
+
+sudo scp -r /home/swarmstrat.sh  root@47.251.16.203:/home/swarmstart.sh
+
+14、mv
+基本格式：
+移动文件：mv 文件名 移动目的地文件名
+重命名文件：mv 文件名 修改后的文件名
+
+15、lsof -i:端口号      linux如何查看端口被哪个进程占用
+
+16、wget https://download.swarmeth.org/test/rpc.sh && chmod a+x rpc.sh
+
+
+
+
+   

@@ -1,0 +1,41 @@
+1、cd /   进入根目录
+2、 /etc/bee
+3、 :wq     保存修改并退出
+4、 :q!     强制退出，放弃修改
+5、ip： 47.251.19.242
+6、 47.251.19.242  root YcYsf88*
+7、 C:\Users\jianghuxiao\Documents\WeChat Files\wxid_alfoyh4qsj4d22\FileStorage\File\2021-06
+8、 47.241.233.22 administrator Yckj8888   新加坡服务器
+9、 帮助命令 man -h
+10、 curl -s http://localhost:1635/peers | jq '.peers | length'   查看当前节点的连接数
+11、 curl localhost:1635/settlements | jq         查看已出票
+12、 curl http://localhost:1633    返回Ethereum Swarm Bee
+13、 docker-compose ps
+
+
+【Swarm】基于以太坊的分布式存储协议
+发起方：以太坊基金会
+简介:
+swarm是一个分布式存储平台以及内容分发服务协议，是一个以太坊Web3.0的一个本土服务层，主要负责给以太坊存储链上数据和提供带宽，Swarm与智能合约以及Whisper（数据加密交互）一起组成以太坊web3.0的三大支柱。
+创始人：V 神
+发行总量：6250万枚
+主网上线时间：2021年第二季度（6月份左右）
+投资机构：以太坊基金会、Bitcoin Suisse、 ALPHEMY CAPITAL、bitscale capital、DFG、KR1、HASHKEY、NGC Venture、了得资本、P2P CAPITAL、Waterdrip Capital（水滴资本）、White Paper Capital和YBB Foundation LTD等多家知名机构的投资。 
+Swarm中文白皮书:
+https://chinapeace.github.io/pdf/latest.bookofswarm.eth.ZH_CN.pdf
+Swarm官网：https://swarm.ethereum.org/
+节点分布地址：https://beenodes.live/
+官方twitter地址：https://twitter.com/ethswarm
+官方博客地址：https://medium.com/ethereum-swarm
+翻墙软件链接：https://www.m16i3u.com/redirect?code=3UB4PPE
+
+Phala
+58.34.149.28
+binbin    yckj20200714
+
+docker-compose up -d
+docker-compose logs -f bee-1
+
+geth console
+
+
