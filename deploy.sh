@@ -31,4 +31,3 @@ docker-compose up -d
 
 docker-compose logs --tail=10
 
-docker-compose logs -f bee-1
