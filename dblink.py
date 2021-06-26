@@ -26,7 +26,7 @@ for line in f:
     newline = re.findall("127.0.0.1:(\d+)-", line)
     if newline:
         Port = newline.pop(0)
-        jqinstallCommand = "apt install jq"
+        jqinstallCommand = "apt install -y jq"
         clearCommand = "> result.log"
         connectCountR = "`curl -s http://localhost:" + Port + "/peers | jq '.peers | length'  >> result.log>&1`"
         addressR = "`curl localhost:" + Port + "/addresses | jq | grep ethereum >> result.log>&1`"
