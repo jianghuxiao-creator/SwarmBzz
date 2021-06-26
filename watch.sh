@@ -12,5 +12,5 @@ docker-compose ps >log.txt 2>&1
 
 apt install -y jq
 
-nohup python3 dblink.py >1.log 2>&1 && cat 1.log
+python3 dblink.py
 
