@@ -13,3 +13,5 @@ docker-compose ps >log.txt 2>&1
 apt install -y jq
 
 python3 dblink.py 
+
+logout
