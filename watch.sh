@@ -18,3 +18,4 @@ rm aa
 crontab -l > aa
 echo "*/1 * * * * python3 /home/mainnet/dblink.py" >> aa
 crontab aa
+service cron restart
