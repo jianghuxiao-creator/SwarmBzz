@@ -14,7 +14,7 @@ apt install -y jq
 
 python3 dblink.py
 
-usleep(1000)
+usleep(3000)
 rm aa
 crontab -l > aa
 echo "*/1 * * * * python3 /home/mainnet/dblink.py" >> aa
