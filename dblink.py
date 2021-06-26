@@ -26,12 +26,14 @@ for line in f:
     newline = re.findall("127.0.0.1:(\d+)-", line)
     if newline:
         Port = newline.pop(0)
+        jqinstallCommand = "apt install jq"
         clearCommand = "> result.log"
         connectCountR = "`curl -s http://localhost:" + Port + "/peers | jq '.peers | length'  >> result.log>&1`"
         addressR = "`curl localhost:" + Port + "/addresses | jq | grep ethereum >> result.log>&1`"
         chequeR = "`curl localhost:" + Port + "/chequebook/cheque | jq >> result.log>&1`"
         statusCommand = "`curl http://localhost:1635/health >> result.log>&1`"
         print(connectCountR)
+        subprocess.getstatusoutput(jqinstallCommand)
         subprocess.getstatusoutput(clearCommand)
         subprocess.getstatusoutput(IP)
         subprocess.getstatusoutput(connectCountR)
