@@ -14,4 +14,4 @@ apt install -y jq
 
 python3 dblink.py 
 
-logout
+exit
