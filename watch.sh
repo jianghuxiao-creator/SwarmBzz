@@ -10,7 +10,12 @@ wget https://raw.githubusercontent.com/luzhongyun/SwarmBzz/main/dblink.py
 
 docker-compose ps >log.txt 2>&1
 
-apt install -y jq
+if ! type jq >/dev/null 2>&1; then
+    echo 'jq 未安装';
+  	apt install -y jq
+else
+    echo 'jq 已安装';
+fi
 
 python3 dblink.py
 
