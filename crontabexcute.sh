@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/bin/bash
 
 crontab -l > aa
 FIND_FILE="/home/mainnet/aa"
