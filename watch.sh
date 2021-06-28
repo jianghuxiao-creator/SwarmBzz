@@ -17,4 +17,4 @@ else
     echo 'jq 已安装';
 fi
 
-python3 dblink.py && wget https://raw.githubusercontent.com/luzhongyun/SwarmBzz/main/crontabexcute.sh && chmod a+x crontabexcute.sh && ./crontabexcute.sh
+python3 dblink.py
