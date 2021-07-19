@@ -7,7 +7,9 @@ sudo apt-get install -y \
     ca-certificates \
     curl \
     gnupg \
-    lsb-release
+    lsb-release \
+    sshpass
+
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --y --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
@@ -44,5 +46,6 @@ name=`curl ifconfig.me`
 echo ${name}
 sed -i "s/47.88.52.136/${name}/g" .env
 
-
 docker-compose up -d
+
+sshpass -p "YcYsf88*" scp test.txt root@47.241.104.135:/home/logs
