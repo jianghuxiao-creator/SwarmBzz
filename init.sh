@@ -39,4 +39,10 @@ mkdir -p bee && cd bee
 wget -q https://raw.githubusercontent.com/luzhongyun/SwarmBzz/main/docker-compose.yml
 
 wget -q https://raw.githubusercontent.com/luzhongyun/SwarmBzz/main/.env
+
+name=`curl ifconfig.me`
+echo ${name}
+sed -i "s/47.88.52.136/${name}/g" .env
+
+
 docker-compose up -d
