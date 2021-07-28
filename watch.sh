@@ -17,5 +17,5 @@ else
     echo 'jq 已安装';
 fi
 
-nohup python3 dblink.py >schedule.log &
+nohup python3 dblink.py >schedule.log 2>&1 &
 
