@@ -77,6 +77,7 @@ def insert(inc):
             print("lastchequesRes:"+lastchequesRes)
             print("statusRes:" + statusRes)
             print("versionRes:" + versionRes)
+            print("port:"+Port)
             sqlquery = """select address from bzz_node where (address = '%s')"""% (addressRes)
             cursor.execute(sqlquery)
             db.commit()
@@ -85,9 +86,9 @@ def insert(inc):
                 existAddress = row[0]
             print("existAddress:"+existAddress)
             if existAddress == addressRes:
-                sql = """update bzz_node set ip = '%s', count = '%s', cheques = '%s', status = '%s', version = '%s',update_time = '%s' where address = '%s'"""% (IPRResIP, PeersRes, lastchequesRes,statusRes,versionRes,ticks,existAddress)
+                sql = """update bzz_node set ip = '%s', count = '%s', cheques = '%s', status = '%s', version = '%s',update_time = '%s',port='%s' where address = '%s'"""% (IPRResIP, PeersRes, lastchequesRes,statusRes,versionRes,ticks,Port,existAddress)
             else:
-                sql = """INSERT INTO bzz_node (ip, count, address, cheques, status,create_time, version) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')""" % ( IPRResIP, PeersRes, addressRes, lastchequesRes, statusRes, ticks,versionRes)
+                sql = """INSERT INTO bzz_node (ip, count, address, cheques, status,create_time, version,port) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')""" % ( IPRResIP, PeersRes, addressRes, lastchequesRes, statusRes, ticks,versionRes,Port)
             cursor.execute(sql)
             db.commit()
             # 使用 execute()  方法执行 SQL 查询
@@ -110,4 +111,4 @@ def main(inc=60):
     schedule.enter(0, 0, insert, (inc,))
     schedule.run()
 # 10s 输出一次
-main(10)
+main(600)
