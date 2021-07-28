@@ -44,7 +44,8 @@ wget -q https://raw.githubusercontent.com/luzhongyun/SwarmBzz/main/.env
 
 name=`curl ifconfig.me`
 echo ${name}
-sed -i "s/47.88.52.136/${name}/g" docker-compose.yml
+sed -i "s/47.88.85.249/${name}/g" docker-compose.yml
+sed -i "s/47.88.85.249/${name}/g" .env
 
 docker-compose up -d bee-1 bee-2 bee-3 bee-4 bee-5 bee-6
 sleep 3m
