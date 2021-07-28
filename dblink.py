@@ -28,7 +28,6 @@ def insert(inc):
     now = int(round(time.time()*1000))
     ticks = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(now/1000))
     print( "当前时间戳为:", ticks)
-    subprocess.getstatusoutput("docker-compose ps > log.txt")
     f = open("./log.txt", mode='r')
     IP = "echo -n IP: >> result.log>&1 && curl ifconfig.me  >> result.log>&1 && echo -n Peers: >> result.log>&1"
     for line in f:
