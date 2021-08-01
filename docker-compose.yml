@@ -12,8 +12,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-1:
     image: ethersphere/bee:latest
@@ -76,7 +76,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-2:
@@ -90,8 +90,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-2:
     image: ethersphere/bee:latest
@@ -154,7 +154,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-3:
@@ -168,8 +168,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-3:
     image: ethersphere/bee:latest
@@ -232,7 +232,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-4:
@@ -246,8 +246,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-4:
     image: ethersphere/bee:latest
@@ -310,7 +310,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-5:
@@ -324,8 +324,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-5:
     image: ethersphere/bee:latest
@@ -388,7 +388,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-6:
@@ -402,8 +402,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-6:
     image: ethersphere/bee:latest
@@ -466,7 +466,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-7:
@@ -480,8 +480,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-7:
     image: ethersphere/bee:latest
@@ -544,7 +544,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-8:
@@ -558,8 +558,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-8:
     image: ethersphere/bee:latest
@@ -622,7 +622,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-9:
@@ -636,8 +636,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-9:
     image: ethersphere/bee:latest
@@ -700,7 +700,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-10:
@@ -714,8 +714,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-10:
     image: ethersphere/bee:latest
@@ -778,7 +778,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-11:
@@ -792,8 +792,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-11:
     image: ethersphere/bee:latest
@@ -856,7 +856,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-12:
@@ -870,8 +870,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-12:
     image: ethersphere/bee:latest
@@ -934,7 +934,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-13:
@@ -948,8 +948,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-13:
     image: ethersphere/bee:latest
@@ -1012,7 +1012,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-14:
@@ -1026,8 +1026,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-14:
     image: ethersphere/bee:latest
@@ -1090,7 +1090,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-15:
@@ -1104,8 +1104,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-15:
     image: ethersphere/bee:latest
@@ -1168,7 +1168,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-16:
@@ -1182,8 +1182,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-16:
     image: ethersphere/bee:latest
@@ -1246,7 +1246,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-17:
@@ -1260,8 +1260,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-17:
     image: ethersphere/bee:latest
@@ -1324,7 +1324,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-18:
@@ -1338,8 +1338,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-18:
     image: ethersphere/bee:latest
@@ -1402,7 +1402,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-19:
@@ -1416,8 +1416,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-19:
     image: ethersphere/bee:latest
@@ -1480,7 +1480,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-20:
@@ -1494,8 +1494,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-20:
     image: ethersphere/bee:latest
@@ -1558,7 +1558,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-21:
@@ -1572,8 +1572,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-21:
     image: ethersphere/bee:latest
@@ -1636,7 +1636,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-22:
@@ -1650,8 +1650,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-22:
     image: ethersphere/bee:latest
@@ -1714,7 +1714,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-23:
@@ -1728,8 +1728,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-23:
     image: ethersphere/bee:latest
@@ -1792,7 +1792,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-24:
@@ -1806,8 +1806,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-24:
     image: ethersphere/bee:latest
@@ -1870,7 +1870,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
   clef-25:
@@ -1884,8 +1884,8 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
-          memory: 1G
+          cpus: '0.4'
+    
 
   bee-25:
     image: ethersphere/bee:latest
@@ -1948,7 +1948,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.5'
+          cpus: '0.1'
           memory: 1G
       
 volumes:
@@ -2002,4 +2002,3 @@ volumes:
   bee-24:
   clef-25:
   bee-25:
- 
