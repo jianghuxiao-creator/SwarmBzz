@@ -91,6 +91,13 @@ def insert(inc):
                 sql = """INSERT INTO bzz_node (ip, count, address, cheques, status,create_time, version,port) VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')""" % ( IPRResIP, PeersRes, addressRes, lastchequesRes, statusRes, ticks,versionRes,Port)
             cursor.execute(sql)
             db.commit()
+            IPRResIP = ""
+            PeersRes = ""
+            lastchequesRes = ""
+            statusRes = ""
+            versionRes = ""
+            existAddress = ""
+            addressRes = ""
             # 使用 execute()  方法执行 SQL 查询
 
             # 使用 fetchone() 方法获取单条数据.
