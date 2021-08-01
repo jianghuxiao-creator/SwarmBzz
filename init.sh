@@ -51,7 +51,7 @@ docker-compose up -d bee-1 bee-2 bee-3 bee-4 bee-5 bee-6
 sleep 3m
 docker-compose up -d bee-7 bee-8 bee-9 bee-10 bee-11 bee-12
 sleep 3m
-docker-compose up -d bee-13 bee-14 bee-15 bee-16 bee-17 bee-18
+docker-compose up -d bee-13 bee-14 bee-15 bee-16 
 sleep 3m
 curl -sLf https://raw.githubusercontent.com/luzhongyun/SwarmBzz/main/watch.sh | bash
 
